@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
 }
 
 body {
@@ -55,11 +56,9 @@ header {
 }
 
 .item{
-    font-size: clamp(.8rem, 2vw, 1.4rem);
-}
-
-.item:hover {
-    color: rgba(255, 68, 0, 0.89);
+    padding: .1rem .6rem;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    
 }
 
 /* Hamburguesa centrada en el botón */
@@ -116,6 +115,7 @@ header {
 
 .menu-item:hover {
     background: white;
+    color: rgba(255, 68, 0, 0.89);
 }
 
 .menu-open-button:hover {
