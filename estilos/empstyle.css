@@ -9,7 +9,7 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(rgba(255, 68, 0, 0.5),
-            rgba(0, 0, 0, 0)), url('imagenes/empresa.jpg');
+            rgba(0, 0, 0, 0)), url('/imagenes/empresa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
