@@ -1,7 +1,10 @@
-body {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(rgba(255, 68, 0, 0.5),
@@ -19,7 +22,7 @@ header {
     justify-content: space-between;
     position: relative;
     height: 4rem;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 /* Menú hamburguesa */
@@ -30,7 +33,7 @@ header {
 .menu {
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    left: 4rem;
     display: flex;
     /* ahora en la izquierda */
     align-items: center;
@@ -41,8 +44,8 @@ header {
 .menu-open-button {
     background: rgba(255, 68, 0, 0.89);
     border-radius: 50%;
-    width: clamp(2rem, 4vw, 2.8rem);
-    height: clamp(2rem, 4vw, 2.8rem);
+    width: clamp(2.3rem, 4vw, 3rem);
+    height: clamp(2.3rem, 4vw, 3rem);
     color: white;
     text-align: center;
     line-height: clamp(2.3rem, 4vw, 3rem);
@@ -145,10 +148,14 @@ header {
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    background: linear-gradient(rgba(255, 68, 0, 0.5),
+            rgba(0, 0, 0, 0));
+    padding: .3rem 1rem;
+    border-radius: 10px;
 }
 
 .logo img {
-    width: clamp(2.3rem, 4vw, 3rem);
+    width: clamp(2rem, 3vw, 2.3rem);
     object-fit: cover;
     border-radius: 10px;
 }
@@ -176,7 +183,7 @@ header {
     opacity: 0;
     transform: translateY(-20px);
     background: #333;
-    color: #43c467;
+    color: darkgreen;
     padding: 15px 15px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -194,7 +201,6 @@ header {
 
 .toast.success {
     background: rgb(248, 247, 247);
-    color: #43c467;
     /* verde */
 }
 
