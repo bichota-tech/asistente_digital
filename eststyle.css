@@ -1,11 +1,15 @@
-body {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: default;
+}
+
+body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(rgb(255, 255, 255),
-            rgba(0, 0, 0, 0)), url('imagenes/CheckBlue_1366x768.png');
+    background: linear-gradient(rgb(21, 122, 217,0.5),
+            rgba(0, 0, 0, 0)), url('imagenes/empresa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -15,9 +19,11 @@ body {
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: relative;
     height: 4rem;
+    padding: 0 4rem;
 }
 
 /* Menú hamburguesa */
@@ -28,7 +34,7 @@ header {
 .menu {
     position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 4rem;
     display: flex;
     /* ahora en la izquierda */
     align-items: center;
@@ -37,7 +43,7 @@ header {
 /* Botón principal */
 .menu-item,
 .menu-open-button {
-    background: #157ad9;
+    background: rgb(21, 122, 217);
     border-radius: 50%;
     width: clamp(2.3rem, 4vw, 3rem);
     height: clamp(2.3rem, 4vw, 3rem);
@@ -49,9 +55,8 @@ header {
     position: relative;
 }
 
-img.item {
-    vertical-align: middle;
-    width: clamp(1.3rem, 2vw, 1.8rem);
+.item{
+    font-size: clamp(.8rem, 2vw, 1.4rem);
 }
 
 /* Hamburguesa centrada en el botón */
@@ -107,7 +112,8 @@ img.item {
 }
 
 .menu-item:hover {
-    background: #58ba3f;
+    background: white;
+    color: rgb(21, 122, 217);
 }
 
 .menu-open-button:hover {
@@ -139,20 +145,22 @@ img.item {
     display: flex;
     align-items: center;
     gap: .5rem;
-    margin: 1.5rem;
-
+    background: linear-gradient(rgb(21, 122, 217, 0.5),
+            rgba(0, 0, 0, 0));
+    padding: .3rem 1rem;
+    border-radius: 10px;
 }
 
 .logo img {
-    width: clamp(2.3rem, 4vw, 3rem);
+   width: clamp(2rem, 3vw, 2.3rem);
     object-fit: cover;
     border-radius: 10px;
 }
 
 h2 {
-    color: rgb(37, 37, 37);
+    color: whitesmoke;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -171,7 +179,7 @@ h2 {
     opacity: 0;
     transform: translateY(-20px);
     background: #333;
-    color: #43c467;
+    color: darkgreen;
     padding: 15px 15px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -189,7 +197,6 @@ h2 {
 
 .toast.success {
     background: rgb(248, 247, 247);
-    ;
     /* verde */
 }
 
@@ -199,10 +206,6 @@ h2 {
 }
 
 section.tabla_tareas {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center; */
     display: grid;
     grid-template-rows: auto 1fr;
     align-content: center;
@@ -389,12 +392,6 @@ button.delete-task {
     border: 2px solid red;
 }
 
-footer p {
-    font-size: small;
-    color: gray;
-
-}
-
 footer {
     display: none;
     position: fixed;
@@ -402,7 +399,14 @@ footer {
     left: 0;
     text-align: center;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    padding: .5rem;
+}
 
+footer p {
+    font-size: small;
+    color: white;
+    margin:0;
 }
 
 @media (min-width:425px) {
